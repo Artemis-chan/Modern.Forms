@@ -81,6 +81,12 @@ namespace Modern.Forms
             }
         }
 
+
+        /// <summary>
+        /// Sets whether the Form will be rendered always on top.
+        /// </summary>
+        public void SetTopMost(bool b) => window.SetTopmost(b);
+
         /// <inheritdoc/>
         public override void Close ()
         {
