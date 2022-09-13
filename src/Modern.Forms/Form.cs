@@ -85,7 +85,12 @@ namespace Modern.Forms
         /// <summary>
         /// Sets whether the Form will be rendered always on top.
         /// </summary>
-        public void SetTopMost(bool b) => window.SetTopmost(b);
+        public void SetTopmost(bool b) => window.SetTopmost(b);
+        
+        /// <summary>
+        /// Sets whether the Taskbar Icon will be shown.
+        /// </summary>
+        public void ShowTaskbarIcon(bool b) => Window.ShowTaskbarIcon(b);
 
         /// <inheritdoc/>
         public override void Close ()
